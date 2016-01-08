@@ -5,28 +5,21 @@
         </div>
  
         <table class="table">
-            <tr>
+            <tr ng-repeat="i in items">
                 <td>
-                    CPU
+                    {{i.item}}
                 </td>
                 <td>
-                    Rs. 20000
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Hard Disk
-                </td>
-                <td>
-                    Rs. 5000
+                    Rs. {{i.selected}}
                 </td>
             </tr>
+            
             <tr>
                 <td>
                     <b>Total:</b>
                 </td>
                 <td>
-                    <b>Rs. 25000</b>
+                    <b>Rs. {{total}}</b>
                 </td>
             </tr>
         </table>
